@@ -57,6 +57,15 @@
                 font-size: 1.5rem; /* Hace el título más pequeño para que no ocupe muchas líneas */
             }
         }
+        .letra-ajustable {
+            white-space: pre-line; /* Respeta tus "Enters", pero permite que el texto baje si no cabe en el móvil */
+            text-align: center;    /* O 'left' si prefieres que todo empiece a la izquierda */
+            font-family: inherit;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -94,9 +103,9 @@
 
         <section id="cancion1">
             <h2>🎶 Canción: Ven, Ven Señor No Tardes</h2>
-            <div class="cancion-box">                
+            <p class="cancion-box">                
                 <h3>Letra:</h3>
-                <div>
+                <p>
                     **Coro**
                     Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
                     
@@ -118,8 +127,8 @@
                     **Coro**
                     Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
 
-                </div>
-            </div>
+                </p>
+            </p>
         </section>
 
         <section id="segunda-lectura">
