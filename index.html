@@ -39,14 +39,14 @@
             font-weight: bold;
         }
         pre {
-            white-space: pre-wrap;    /* Mantiene tus saltos de línea pero permite que el texto baje si no cabe en el móvil */
+            white-space: pre-line;    /* Mantiene tus saltos de línea pero permite que el texto baje si no cabe en el móvil */
+            word-wrap: break-word;
             text-align: left;         /* Alinea todo al inicio (izquierda) como quieres */
-            display: flex;
+            display: block;
             flex-direction: column;
             align-items: flex-start;
             background-color: #eee;   /* El color gris de la imagen original */
-            padding: 20PX;
-            padding-left: 40PX;
+            padding: 20PX 20px 20px 45px;            
             border-radius: 5px;
             font-family: inherit;     /* Usa la misma letra que el resto de la página */
             line-height: 1.8;         /* Separa un poco las líneas para que sea fácil de leer */
@@ -200,7 +200,7 @@
 
         <section id="explicacion">
             <h2>💬 Reflexión y Comentario</h2>
-            <div> class="explicacion"> </div>
+            <div class="explicacion">
                 <ul>
                     <li>La Virgen y San José, con su fe, esperanza y caridad salen victoriosos de los problemas. No hay rechazo, ni frío, ni oscuridad ni incomodidad, que les pueda separar del amor de Jesús que nace.
                     Ellos son los benditos de Dios que le reciben. Dios no encuentra lugar mejor que aquel pesebre, porque allí estaba el amor inmaculado que lo recibe
@@ -212,7 +212,7 @@
 
         <section id="cancion3">
             <h2>🎶 Canción Final: Dijiste Si</h2>
-            <div> class="cancion-box"> </div>
+            <div class="cancion-box"> 
                 <h3>Letra:</h3>
                 <pre>
                    **ESTROFA 1:**
