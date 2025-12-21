@@ -41,14 +41,17 @@
         pre {
             white-space: pre-wrap;    /* Mantiene tus saltos de línea pero permite que el texto baje si no cabe en el móvil */
             text-align: left;         /* Alinea todo al inicio (izquierda) como quieres */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             background-color: #eee;   /* El color gris de la imagen original */
             padding: 20PX;
-            padding-left: 60PX;
+            padding-left: 40PX;
             border-radius: 5px;
             font-family: inherit;     /* Usa la misma letra que el resto de la página */
             line-height: 1.8;         /* Separa un poco las líneas para que sea fácil de leer */
             margin: 15px 0;
-            display: block;      /*Asegura que el bloque ocupe todo el ancho */
+            
         }
         /* Esto solo se aplica a pantallas de menos de 600px (celulares) */
         @media (max-width: 600px) {
@@ -91,7 +94,7 @@
         <section id="primera-lectura">
             <h2>🕊️ Primera lectura</h2>
             <div class="lectura">
-                <p>Lectura de la carta del apóstol san Pablo a los Romanos (1,1-7):</p>
+                <p><strong> Lectura de la carta del apóstol san Pablo a los Romanos (1,1-7):</strong></p>
                 <p>Pablo, siervo de Cristo Jesús, llamado a ser apóstol, escogido para anunciar el Evangelio de Dios. Este Evangelio, prometido ya por sus profetas en las Escrituras santas, se refiere a su Hijo, nacido, según la carne, de la estirpe de David; constituido, según el Espíritu Santo, Hijo de Dios, con pleno poder por su resurrección de la muerte: Jesucristo, nuestro Señor. 
                    Por él hemos recibido este don y esta misión: hacer que todos los gentiles respondan a la fe, para gloria de su nombre. Entre ellos estáis también vosotros, llamados por Cristo Jesús. A todos los de Roma, a quienes Dios ama y ha llamado a formar parte de los santos, os deseo la gracia y la paz de Dios, nuestro Padre, y del Señor Jesucristo.
                    Palabra de Dios
@@ -132,20 +135,20 @@
         <section id="segunda-lectura">
             <h2>📖 Salmo responsorial </h2>
             <div class="lectura">
-                <p>Salmo 23</p>
-                <p>R/. Va a entrar el Señor, él es el Rey de la gloria</p>
+                <p><strong> Salmo 23 </strong></p>
+                <p><strong> R/. Va a entrar el Señor, él es el Rey de la gloria </strong></p>
                 <p>1. Del Señor es la tierra y cuanto la llena,
                         el orbe y todos sus habitantes:
                         él la fundó sobre los mares,
-                        él la afianzó sobre los ríos. R/. Va a entrar el Señor, él es el Rey de la gloria</p>    
+                        él la afianzó sobre los ríos. <strong> R/. Va a entrar el Señor, él es el Rey de la gloria </strong></p>    
                 <p>2. ¿Quién puede subir al monte del Señor?
                         ¿Quién puede estar en el recinto sacro?
                         El hombre de manos inocentes y puro corazón,
-                        que no confía en los ídolos. R/. Va a entrar el Señor, él es el Rey de la gloria</p>    
+                        que no confía en los ídolos. <strong> R/. Va a entrar el Señor, él es el Rey de la gloria </strong></p>    
                 <p>  3. Ése recibirá la bendición del Señor,
                         le hará justicia el Dios de salvación.
                         Éste es el grupo que busca al Señor,
-                        que viene a tu presencia, Dios de Jacob. R/. Va a entrar el Señor, él es el Rey de la gloria. </p>  
+                        que viene a tu presencia, Dios de Jacob. <strong> R/. Va a entrar el Señor, él es el Rey de la gloria </strong> </p>  
                 </div>
         </section>
         
@@ -184,20 +187,20 @@
         <section id="evangelio">
             <h2>✝️ Lectura del Santo Evangelio</h2>
             <div class="lectura">
-                <p>Lectura del santo evangelio según san Mateo (1,18-24):</p>
-                <p>R/Gloria a ti, Señor.</p>
+                <p><strong> Lectura del santo evangelio según san Mateo (1,18-24):</strong> </p>
+                <p><strong> R/Gloria a ti, Señor. </strong></p>
                 <p>El nacimiento de Jesucristo fue de esta manera: María, su madre, estaba desposada con José y, antes de vivir juntos, resultó que ella esperaba un hijo por obra del Espíritu Santo. José, su esposo, que era justo y no quería denunciarla, decidió repudiarla en secreto.
                     Pero, apenas había tomado esta resolución, se le apareció en sueños un ángel del Señor que le dijo: «José, hijo de David, no tengas reparo en llevarte a María, tu mujer, porque la criatura que hay en ella viene del Espíritu Santo. Dará a luz un hijo, y tú le pondrás por nombre Jesús, porque él salvará a su pueblo de los pecados»
                     Todo esto sucedió para que se cumpliese lo que habla dicho el Señor por el Profeta: «Mirad: la Virgen concebirá y dará a luz un hijo y le pondrá por nombre Emmanuel, que significa "Dios-con-nosotros"»
                     Cuando José se despertó, hizo lo que le había mandado el ángel del Señor y se llevó a casa a su mujer.
                     Palabra del Señor</p>    
-                <p>R/Gloria a tí Señor Jesús</p>                
+                <p><strong> R/Gloria a tí Señor Jesús</strong></p>                
             </div>
         </section>
 
         <section id="explicacion">
             <h2>💬 Reflexión y Comentario</h2>
-            <div> class="explicacion">
+            <div> class="explicacion"> </div>
                 <ul>
                     <li>La Virgen y San José, con su fe, esperanza y caridad salen victoriosos de los problemas. No hay rechazo, ni frío, ni oscuridad ni incomodidad, que les pueda separar del amor de Jesús que nace.
                     Ellos son los benditos de Dios que le reciben. Dios no encuentra lugar mejor que aquel pesebre, porque allí estaba el amor inmaculado que lo recibe
@@ -209,7 +212,7 @@
 
         <section id="cancion3">
             <h2>🎶 Canción Final: Dijiste Si</h2>
-            <div> class="cancion-box">
+            <div> class="cancion-box"> </div>
                 <h3>Letra:</h3>
                 <pre>
                    **ESTROFA 1:**
