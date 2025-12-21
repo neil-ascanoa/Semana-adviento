@@ -8,16 +8,16 @@
         /* Estilos básicos para que se vea bien sin un archivo CSS externo */
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 10px;  /*Ajustable para cuando quieres movil */
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
         }
         .container {
             max-width: 800px;
-            margin: auto;
+            margin: 10px auto; /* Reducimos el margen exterior para que no sobre mucho espacio a los lados */
             background: white;
-            padding: 30px;
+            padding: 15px;     /* Reducimos el padding interno para ganar espacio de lectura en pantallas pequeñas */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -44,6 +44,19 @@
             padding: 10px;
             border-radius: 5px;
         }
+        /* Esto solo se aplica a pantallas de menos de 600px (celulares) */
+        @media (max-width: 600px) {
+            body {
+                margin: 5px; 
+                font-size: 14px; /* Ajusta un poco el tamaño de letra si es necesario */
+            }
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5rem; /* Hace el título más pequeño para que no ocupe muchas líneas */
+            }
+        }
     </style>
 </head>
 <body>
@@ -64,12 +77,12 @@
         <section id="encendido-corona">
             <h2>✨ Oración para encender la cuarta vela</h2>
             <div class="explicacion">
-                <p> Derrama señor tu gracia sobne nosotros, que , por el anuncio del ángel, hemos conocido la encarnación de tu hijo, para que lleguemos por su pasión y su cruz a la gloria de la resurreción. Por nuestro señor jesucristo. Amén.</p>
+                <p> Derrama señor tu gracia sobre nosotros, que , por el anuncio del ángel, hemos conocido la encarnación de tu hijo, para que lleguemos por su pasión y su cruz a la gloria de la resurreción. Por nuestro señor jesucristo. Amén.</p>
             </div>
         </section>
 
         <section id="primera-lectura">
-            <h2>🕊️ Primnera lectura</h2>
+            <h2>🕊️ Primera lectura</h2>
             <div class="lectura">
                 <p>Lectura de la carta del apóstol san Pablo a los Romanos (1,1-7):</p>
                 <p>Pablo, siervo de Cristo Jesús, llamado a ser apóstol, escogido para anunciar el Evangelio de Dios. Este Evangelio, prometido ya por sus profetas en las Escrituras santas, se refiere a su Hijo, nacido, según la carne, de la estirpe de David; constituido, según el Espíritu Santo, Hijo de Dios, con pleno poder por su resurrección de la muerte: Jesucristo, nuestro Señor. 
@@ -80,51 +93,31 @@
         </section>
 
         <section id="cancion1">
-            <h2>🎶 Canción</h2>
+            <h2>🎶 Canción: Ven, Ven Señor No Tardes</h2>
             <div class="cancion-box">                
                 <h3>Letra:</h3>
                 <pre>
+                    **Coro**
+                    Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
+                    
                     **ESTROFA 1:**
-                   Ven, ven, Señor, no tardes
-                    Ven, ven, que te esperamos
-                    Ven, ven, Señor, no tardes
-                    Ven, pronto, Señor
+                    El mundo muere de frío, el alma perdió el calor; los hombres no son hermanos, el mundo no tiene amor.
+
+                    **Coro**
+                    Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
 
                     **ESTROFA 2:**
-                    El mundo muere de frío
-                    El alma perdió el calor
-                    Los hombres no son hermanos
-                    El mundo no tiene amor
+                    Envuelto en sombría noche, el mundo, sin paz, no ve; buscando va una esperanza, buscando, Señor, tu fe.
+
+                    **Coro**
+                    Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
 
                     **ESTROFA 3:**
-                    Ven, ven, Señor, no tardes
-                    Ven, ven, que te esperamos
-                    Ven, ven, Señor, no tardes
-                    Ven, pronto, Señor
+                    Al mundo le falta vida, al mundo le falta luz; al mundo le falta el cielo, al mundo le faltas Tú.
 
-                    **ESTROFA 4:**
-                   Envuelto en sombría noche
-                    El mundo, sin paz, no ve
-                    Buscando va, una esperanza
-                    Buscando, Señor, la fe
+                    **Coro**
+                    Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
 
-                    **ESTROFA 5:**
-                    Ven, ven, Señor, no tardes
-                    Ven, ven, que te esperamos
-                    Ven, ven, Señor, no tardes
-                    Ven, pronto, Señor
-
-                  **ESTROFA 6:**
-                    Al mundo le falta vida
-                    Al mundo le falta luz
-                    Al mundo le falta el cielo
-                    Al mundo le faltas Tú
-
-                  **ESTROFA 7:**
-                    Ven, ven, Señor, no tardes
-                    Ven, ven, que te esperamos
-                    Ven, ven, Señor, no tardes
-                    Ven, pronto, Señor
                 </pre>
             </div>
         </section>
@@ -150,17 +143,33 @@
         </section>
         
         <section id="cancion2">
-            <h2>🎶 Canción: El Sí de María</h2>
+            <h2>🎶 Canción: Jesús, te esperamos</h2>
             <div class="cancion-box">                
                 <h3>Letra:</h3>
                 <pre>
                     **ESTROFA 1:**
-                    He aquí la esclava del Señor,
-                    hágase en mí según tu palabra.
-
+                    Jesús, te esperamos, restaura nuestras fuerzas, mira el mundo que a diario se desangra por no comprender tu mensaje de salvación.
+                    
+                    **Coro**
+                    Aquí te esperamos, Jesús de Nazaret, renueva la promesa de ser el Emanuel. Aquí te esperamos, Jesús hijo de Yahvé, ven pronto a nuestro nuevo Belén. "bis"
+                    
                     **ESTROFA 2:**
-                    Un corazón que dice 'sí',
-                    abre la puerta al Salvador.
+                    Tiempo de Adviento, tiempo de Jesús, en ti esperamos un nuevo renacer. Los ángeles ansían un gran acontecer cantando al unísono: "Gloria Exercituum".
+
+                    **Coro**
+                    Aquí te esperamos, Jesús de Nazaret, renueva la promesa de ser el Emanuel. Aquí te esperamos, Jesús hijo de Yahvé, ven pronto a nuestro nuevo Belén. "bis"
+
+                    **ESTROFA 3:**
+                    Señor, te esperamos con la cuna preparada, que no tiene madera ni clavos, solo calor humano que nos enseña a ser familia entregada, dispuesta a dar todo lo que somos.
+
+                    **Coro**
+                    Aquí te esperamos, Jesús de Nazaret, renueva la promesa de ser el Emanuel. Aquí te esperamos, Jesús hijo de Yahvé, ven pronto a nuestro nuevo Belén. "bis"
+
+                    **ESTROFA 4:**
+                    Jesús, hermano nuestro, mira nuestras heridas y en este Adviento llénanos de ilusión, para volver a creer que con tu venida el mundo entero puede florecer.
+
+                    **Coro**
+                    Aquí te esperamos, Jesús de Nazaret, renueva la promesa de ser el Emanuel. Aquí te esperamos, Jesús hijo de Yahvé, ven pronto a nuestro nuevo Belén. "bis"
                 </pre>
             </div>
         </section>
@@ -181,37 +190,46 @@
 
         <section id="explicacion">
             <h2>💬 Reflexión y Comentario</h2>
-            <div class="explicacion">
-                <p>Esta es la parte central donde desarrollas la homilía o el comentario. Conecta las lecturas con tu vida diaria y el significado de la Navidad que se acerca.</p>
+            <div> class="explicacion">
                 <ul>
                     <li>La Virgen y San José, con su fe, esperanza y caridad salen victoriosos de los problemas. No hay rechazo, ni frío, ni oscuridad ni incomodidad, que les pueda separar del amor de Jesús que nace.
                     Ellos son los benditos de Dios que le reciben. Dios no encuentra lugar mejor que aquel pesebre, porque allí estaba el amor inmaculado que lo recibe
                     Nos unimos a La Virgen y San José con un sincero deseo de renunciar a todo lo que impide que Jesús nazca en nuestro corazón.</li>
                     
                 </ul>
-                </div>
+            </div>
         </section>
 
         <section id="cancion3">
-            <h2>🎶 Canción Final: Preparando el Corazón</h2>
-            <div class="cancion-box">
-                <a href="**LINK_DE_YOUTUBE_O_SPOTIFY_AQUÍ**" target="_blank" class="link-cancion">Escuchar Canción 3 (Reemplaza este enlace)</a>
+            <h2>🎶 Canción Final: Dijiste Si</h2>
+            <div> class="cancion-box">
                 <h3>Letra:</h3>
                 <pre>
-                    **ESTROFA 1:**
-                    Ya viene el Niño, ya va a nacer,
-                    mi corazón es un portal.
+                   **ESTROFA 1:**
+                    Dijiste sí y la tierra estalló de alegría. Dijiste sí y en tu vientre latía divina la salvación. Hágase en mí, de corazón, la voluntad de mi Señor, que se cumplan en mí cada día los sueños de Dios.
+
+                    **Coro**
+                    María, las tinieblas se harán mediodía, a una sola palabra que digas, en tus labios alumbra ya el Sol. María, la doncella que Dios prometía, un volcán de ternura divina, primavera de Dios Redentor. 
 
                     **ESTROFA 2:**
-                    Ven, Señor Jesús, ven pronto a mi alma,
-                    te esperamos con amor.
-                    </pre>
+                    Gabriel tembló, conmovido con tanta belleza. Madre de Dios, cuélame en tu mirada de amor de la Anunciación. Hágase en mí, de corazón, la voluntad de mi Señor, que se cumplan en mí cada día los sueños de Dios.
+
+                    **Coro**
+                    María, las tinieblas se harán mediodía, a una sola palabra que digas, en tus labios alumbra ya el Sol. María, la doncella que Dios prometía, un volcán de ternura divina, primavera de Dios Redentor. 
+
+                    **ESTROFA 3:**
+                    Hágase en mí, de corazón, la voluntad de mi Señor, que se cumplan en mí cada día los sueños de Dios. María... Un volcán de ternura divina, primavera de Dios Redentor.
+                    
+                </pre>
             </div>
         </section>
 
         <section id="peticiones">
             <h2>🙏 Peticiones</h2>
-            <div class="peticiones">                            
+            <div class="peticiones">     
+                <p>
+                    Hagamos nuestras peticiones
+                </p>                       
             </div>
         </section>
 
