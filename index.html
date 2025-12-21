@@ -39,10 +39,14 @@
             font-weight: bold;
         }
         pre {
-            white-space: pre-wrap; /* Para que la letra se ajuste al ancho */
-            background-color: #eee;
-            padding: 10px;
+            white-space: pre-wrap;    /* Mantiene tus saltos de línea pero permite que el texto baje si no cabe en el móvil */
+            text-align: left;         /* Alinea todo al inicio (izquierda) como quieres */
+            background-color: #eee;   /* El color gris de la imagen original */
+            padding: 15px;
             border-radius: 5px;
+            font-family: inherit;     /* Usa la misma letra que el resto de la página */
+            line-height: 1.6;         /* Separa un poco las líneas para que sea fácil de leer */
+            margin: 10px 0;
         }
         /* Esto solo se aplica a pantallas de menos de 600px (celulares) */
         @media (max-width: 600px) {
@@ -103,13 +107,13 @@
 
         <section id="cancion1">
             <h2>🎶 Canción: Ven, Ven Señor No Tardes</h2>
-            <p class="cancion-box">                
+            <div class="cancion-box">                
                 <h3>Letra:</h3>
-                <p>
-                    <strong>**Coro**</strong>
+                <pre>
+                    **Coro**
                     Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
                     
-                    <strong>**ESTROFA 1:**</strong>
+                    **ESTROFA 1:**
                     El mundo muere de frío, el alma perdió el calor; los hombres no son hermanos, el mundo no tiene amor.
 
                     <strong>**Coro**</strong>
@@ -127,8 +131,8 @@
                     <strong>**Coro**</strong>
                     Ven, ven, Señor, no tardes; ven, ven, que te esperamos. Ven, ven, Señor, no tardes; ven pronto, Señor.
 
-                </p>
-            </p>
+                </pre>
+            </div>
         </section>
 
         <section id="segunda-lectura">
